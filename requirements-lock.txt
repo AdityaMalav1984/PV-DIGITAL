@@ -1,0 +1,2 @@
+# Reproducible baseline; generated/validated project environment should pin these versions.
+-r requirements.txt
