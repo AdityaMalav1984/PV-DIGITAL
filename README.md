@@ -42,7 +42,6 @@ Outputs: `outputs/tables/*.csv` (every number for the report), `outputs/figures/
 
 ## Limitations (state these honestly)
 * No fault labels => **anomaly detection, not fault diagnosis**. Do not claim detection accuracy against real faults.
-* 34 days: no seasonal conclusions.
 * ML temperature response is unreliable on this data (temperature is collinear with irradiance). The simulator therefore defaults to an
   *assumed* physical coefficient (-0.4 %/°C, editable); "raw ML twin" mode is kept for transparency and gives implausible results on Plant 2.
 * Irradiance scenarios are capped at the training maximum (tree models cannot extrapolate).
