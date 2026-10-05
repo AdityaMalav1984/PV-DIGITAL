@@ -7,7 +7,6 @@ pip install -r requirements.txt
 # the repository already contains the 4 CSVs in ./data/
 python run_pipeline.py          # typically ~1–3+ min depending on CPU; forecasting is the bottleneck
 streamlit run app.py            # dashboard
-python forecast_lstm.py         # optional LSTM benchmark (needs torch)
 ```
 Outputs: `outputs/tables/*.csv` (every number for the report), `outputs/figures/*.png` (Fig 3-12 per plant),
 `outputs/data_quality_report.json`, `models/twin_plant*.joblib`.
