@@ -34,8 +34,7 @@ Outputs: `outputs/tables/*.csv` (every number for the report), `outputs/figures/
 ## Data findings (also go in the report)
 * Plant 1 `DC_POWER` is ~10x too large (DC/AC = 10.2); the loader detects and rescales it.
 * Plant 1 generation uses `dd-mm-yyyy` timestamps, Plant 2 ISO; handled.
-* Both plants: 34 days (15 May - 17 Jun 2020), 22 inverters. Plant 1 has 3157/3264 timestamps, Plant 2 3259/3264, but many inverter rows are missing,
-  so complete plant-total timestamps are 3057 (P1) and 2355 (P2).
+* Plant 1 has 3157/3264 timestamps, Plant 2 3259/3264, but many inverter rows are missing, so complete plant-total timestamps are 3057 (P1) and 2355 (P2).
 * Plant 2 has strong inverter heterogeneity and reduced inverter counts at some timestamps. The global twin performs poorly on several inverter groups; the per-inverter + peer twin improves Plant 2 test nMAE, but does not eliminate the gap.
 * Validation calibration drives false-alert rates down, but there are no real fault labels, so alert thresholds remain advisory.
 
