@@ -1,0 +1,17 @@
+plant,scenario,baseline_MWh,simulated_MWh,loss_MWh,loss_%,monitored_inverter,inverter_score,inverter_status
+Plant 1,Baseline (measured),755.479,755.479,0.0,0.0,INV-17,0.001,Normal
+Plant 1,Irradiance x0.8,755.479,615.51,139.969,18.527,INV-17,0.001,Normal
+Plant 1,Irradiance x1.2,755.479,876.095,-120.616,-15.965,INV-17,0.001,Normal
+Plant 1,Temp +5C (physical -0.4%/C),755.479,740.369,15.11,2.0,INV-17,0.001,Normal
+Plant 1,Temp +5C (raw ML twin),755.479,735.232,20.247,2.68,INV-17,0.001,Normal
+Plant 1,INV-17 degradation 10%,755.479,752.006,3.473,0.46,INV-17,0.153,Normal
+Plant 1,INV-17 degradation 20%,755.479,748.533,6.946,0.919,INV-17,0.532,Warning
+Plant 1,INV-17 outage,755.479,720.748,34.731,4.597,INV-17,1.0,High
+Plant 2,Baseline (measured),546.543,546.543,0.0,0.0,INV-08,0.051,Normal
+Plant 2,Irradiance x0.8,546.543,448.111,98.431,18.01,INV-08,0.055,Normal
+Plant 2,Irradiance x1.2,546.543,628.766,-82.223,-15.044,INV-08,0.038,Normal
+Plant 2,Temp +5C (physical -0.4%/C),546.543,535.612,10.93,2.0,INV-08,0.051,Normal
+Plant 2,Temp +5C (raw ML twin),546.543,540.622,5.921,1.083,INV-08,0.047,Normal
+Plant 2,INV-08 degradation 10%,546.543,544.628,1.915,0.35,INV-08,0.192,Normal
+Plant 2,INV-08 degradation 20%,546.543,542.713,3.83,0.701,INV-08,0.487,Warning
+Plant 2,INV-08 outage,546.543,527.393,19.149,3.504,INV-08,1.0,High
