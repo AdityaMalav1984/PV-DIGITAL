@@ -1,0 +1,11 @@
+Plant 2 diagnosis (2026-10-04)
+
+- Inverters per timestamp: 12–22; mode 22. 2,355 timestamps have all 22 inverters, versus 840 with 18 and 64 with 12.
+- Missing plant-level 15-min timestamps: 5 / 3,264.
+- DC/AC median ratio: 1.02; no order-of-magnitude DC unit bug.
+- Weather file has one timestamped weather record per generation timestamp; no second weather sensor file is present in the repository.
+- Global twin test nMAE: ~4.84% in the previous implementation.
+- Per-inverter twin without peer feature: ~5.03% test nMAE (not an improvement).
+- Per-inverter + leave-one-out peer-median AC feature: ~4.37% test nMAE, R² ~0.58, plant-level nMAE ~2.99%.
+- Validation underperformance is correlated with irradiation (~0.44) and module temperature (~0.47), supporting the hypothesis that a single weather sensor does not fully explain inverter-level cloud/spatial variation.
+- Conclusion: Plant 2 is not primarily a DC-unit or missing-timestamp problem. The dominant limitation is heterogeneous/nonstationary inverter response plus spatial irradiance variability. Per-inverter models help only modestly; peer context materially helps but does not fully solve the problem.

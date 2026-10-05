@@ -1,0 +1,38 @@
+[
+  {
+    "plant": 1,
+    "gen_rows_raw": 68778,
+    "weather_rows_raw": 3182,
+    "missing_values": 0,
+    "duplicate_gen_rows": 0,
+    "invalid_rows_removed": 0,
+    "dc_ac_ratio_raw": 10.22,
+    "dc_rescaled_by_10": true,
+    "n_inverters": 22,
+    "rows_without_weather": 4,
+    "period": "2020-05-15 to 2020-06-17",
+    "expected_timestamps": 3264,
+    "timestamps_present": 3157,
+    "complete_plant_timestamps": 3057,
+    "val_share_warning_or_high_%": 0.8708581138487681,
+    "val_p99_underperformance_ratio": 0.21620994355409803
+  },
+  {
+    "plant": 2,
+    "gen_rows_raw": 67698,
+    "weather_rows_raw": 3259,
+    "missing_values": 0,
+    "duplicate_gen_rows": 0,
+    "invalid_rows_removed": 0,
+    "dc_ac_ratio_raw": 1.02,
+    "dc_rescaled_by_10": false,
+    "n_inverters": 22,
+    "rows_without_weather": 0,
+    "period": "2020-05-15 to 2020-06-17",
+    "expected_timestamps": 3264,
+    "timestamps_present": 3259,
+    "complete_plant_timestamps": 2355,
+    "val_share_warning_or_high_%": 21.17621714778113,
+    "val_p99_underperformance_ratio": 0.9999999991775395
+  }
+]
